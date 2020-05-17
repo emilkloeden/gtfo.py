@@ -15,6 +15,8 @@ GREEN_START = "\033[0;32m"
 CYAN_START = "\033[1;36m"
 RESET = "\033[0;0m"
 
+CURRRENT_FILE_DIR = Path(__file__).resolve().parent
+
 
 def _print_green(text):
     print(f"{GREEN_START}{text}{RESET}")
@@ -34,7 +36,7 @@ def _print_details(function_name, blob):
 
 
 def load_bins():
-    path = Path("./gtfobins.yaml")
+    path = Path(CURRRENT_FILE_DIR / "gtfobins.yaml")
     with path.open() as file_handle:
         yaml_object = yaml.load_all(file_handle.read(), Loader=yaml.SafeLoader)
         bins = list(yaml_object)[0]
