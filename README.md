@@ -11,3 +11,9 @@ Find the original project at https://gtfobins.github.io
 ```sh
 python3 --function limited-suid {name}
 ```
+
+It is also recommended to add the following aliases:
+```sh
+alias gtfo="python3 /path/to/gtfo.py"
+alias suid="python3 /path/to/gtfo.py -f suid"
+```
