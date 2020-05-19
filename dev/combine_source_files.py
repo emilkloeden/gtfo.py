@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-combine.py
+combine_source_files.py
 
 Combines the contents of the individual markdown files into one yaml and one json file.
 Requires the GTFOBins repository to run. 
@@ -15,7 +15,7 @@ import argparse
 import json
 from pathlib import Path
 
-PATH_TO_MD_FILES = "../_gtfobins"
+PATH_TO_MD_FILES = "../data/_gtfobins"
 
 
 def get_gtfo_bins(path_to_md_files):

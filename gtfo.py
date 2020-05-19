@@ -36,7 +36,7 @@ def _print_details(function_name, blob):
 
 
 def load_bins():
-    path = Path(CURRRENT_FILE_DIR / "gtfobins.yaml")
+    path = Path(CURRRENT_FILE_DIR / "data" / "gtfobins.yaml")
     with path.open() as file_handle:
         yaml_object = yaml.load_all(file_handle.read(), Loader=yaml.SafeLoader)
         bins = list(yaml_object)[0]
