@@ -15,10 +15,12 @@ Let's be honest. I'm never going to jump through the hoops to get this on PyPI. 
 python3 --function limited-suid {name}
 ```
 
-List all functions for a binary
+List all functions for a binary:
+
 ![alt text](https://github.com/emilkloeden/gtfo.py/raw/master/resources/basic.gif "python3 /path/to/gtfo.py cat")
 
-Filter for a specific function
+Filter for a specific function:
+
 ![alt text](https://github.com/emilkloeden/gtfo.py/raw/master/resources/suid.gif "python3 /path/to/gtfo.py -f suid cat")
 
 It is also recommended to add the following aliases:
